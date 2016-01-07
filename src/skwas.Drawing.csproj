@@ -29,28 +29,32 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>..\..\bin\Debug\</OutputPath>
+    <OutputPath>..\bin\Debug\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <PlatformTarget>AnyCPU</PlatformTarget>
     <Prefer32Bit>false</Prefer32Bit>
-    <DocumentationFile>..\..\bin\Debug\skwas.Drawing.XML</DocumentationFile>
+    <DocumentationFile>..\bin\Debug\skwas.Drawing.XML</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>..\..\bin\Release\</OutputPath>
+    <OutputPath>..\bin\Release\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <PlatformTarget>AnyCPU</PlatformTarget>
     <Prefer32Bit>false</Prefer32Bit>
-    <DocumentationFile>..\..\bin\Release\skwas.Drawing.XML</DocumentationFile>
+    <DocumentationFile>..\bin\Release\skwas.Drawing.XML</DocumentationFile>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="skwas.IO, Version=4.0.5850.5545, Culture=neutral, PublicKeyToken=17f8ca7d3b368c56, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\skwas.IO\bin\Release\skwas.IO.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
@@ -66,12 +70,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="skwas.snk" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\skwas.IO\src\skwas.IO.csproj">
-      <Project>{d0b4ee22-3787-4e31-bd54-fb1f4315387a}</Project>
-      <Name>skwas.IO</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
